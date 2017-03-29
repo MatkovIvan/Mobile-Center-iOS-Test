@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E381A903E6DBE195F3466BE /* Pods_Mobile_Center_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4236779AF7F2F9B1ADC08F /* Pods_Mobile_Center_Test.framework */; };
 		F8A5FA081E8BC68C003B7CEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5FA071E8BC68C003B7CEC /* AppDelegate.swift */; };
 		F8A5FA0A1E8BC68C003B7CEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5FA091E8BC68C003B7CEC /* ViewController.swift */; };
 		F8A5FA0D1E8BC68C003B7CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A5FA0B1E8BC68C003B7CEC /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54F7FDB0DFD0DDEC36F66B2D /* Pods-Mobile Center Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Center Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Center Test/Pods-Mobile Center Test.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4236779AF7F2F9B1ADC08F /* Pods_Mobile_Center_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mobile_Center_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DE1A802C829B62F7339725 /* Pods-Mobile Center Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile Center Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mobile Center Test/Pods-Mobile Center Test.release.xcconfig"; sourceTree = "<group>"; };
 		F8A5FA041E8BC68C003B7CEC /* Mobile Center Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Center Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A5FA071E8BC68C003B7CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A5FA091E8BC68C003B7CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E381A903E6DBE195F3466BE /* Pods_Mobile_Center_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0BF961905051FB2107C5F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54F7FDB0DFD0DDEC36F66B2D /* Pods-Mobile Center Test.debug.xcconfig */,
+				D6DE1A802C829B62F7339725 /* Pods-Mobile Center Test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		798B24AB9BDB573C475CE722 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF4236779AF7F2F9B1ADC08F /* Pods_Mobile_Center_Test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F8A5F9FB1E8BC68C003B7CEC = {
 			isa = PBXGroup;
 			children = (
 				F8A5FA061E8BC68C003B7CEC /* Mobile Center Test */,
 				F8A5FA051E8BC68C003B7CEC /* Products */,
+				2E0BF961905051FB2107C5F7 /* Pods */,
+				798B24AB9BDB573C475CE722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8A5FA161E8BC68C003B7CEC /* Build configuration list for PBXNativeTarget "Mobile Center Test" */;
 			buildPhases = (
+				8AF685060DAE2806D0D1369A /* [CP] Check Pods Manifest.lock */,
 				F8A5FA001E8BC68C003B7CEC /* Sources */,
 				F8A5FA011E8BC68C003B7CEC /* Frameworks */,
 				F8A5FA021E8BC68C003B7CEC /* Resources */,
+				A904B418C1252A2B4AB7B1B0 /* [CP] Embed Pods Frameworks */,
+				3FA3F39064DD3429B7DD929B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FA3F39064DD3429B7DD929B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Center Test/Pods-Mobile Center Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AF685060DAE2806D0D1369A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A904B418C1252A2B4AB7B1B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mobile Center Test/Pods-Mobile Center Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F8A5FA001E8BC68C003B7CEC /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		F8A5FA171E8BC68C003B7CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F7FDB0DFD0DDEC36F66B2D /* Pods-Mobile Center Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -275,6 +351,7 @@
 		};
 		F8A5FA181E8BC68C003B7CEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6DE1A802C829B62F7339725 /* Pods-Mobile Center Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
